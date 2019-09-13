@@ -12,6 +12,8 @@
 body {
     background-color: gainsboro;
     /*ページ全体の背景色*/
+    background-image: url("images/tile.jpg");
+    /*ウェブページ全体の背景画像*/
     font-size: 95%;
     /* フォントサイズを95%にする */
     font-family: "ＭＳ ゴシック", sans-serif;
@@ -28,7 +30,36 @@ div#pagebody {
     /*内容全体をセンタリング==>横幅1000pxのボックスを左右マージンを自動算出して配置する*/
     background-color: darkgoldenrod;
     /*内容全体の背景色(変化を分かりやすくするために色は手本とは変えています)*/
+    background-image: url("images/bg_pagebody.png");
+    /*コンテンツ全体の背景画像*/
+    background-repeat: repeat-y;
+    /*背景画像を縦方向に繰り返す*/
 }
+
+img {
+    border: 0;
+}
+
+/*画像のボーダーを0にする。*/
+
+/*=============================
+ヘッダ
+================================*/
+
+div#header h1 {
+    padding: 10px 0px 5px 20px;
+    /*見出しの位置調節*/
+    font-size: 18px;
+    /*フォントのサイズ*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*フォントの種類*/
+}
+
+div#header h1 a {
+    text-decoration: none;
+}
+
+/*リンクの下線を無くす*/
 
 /*============================================
 メインメニュー
@@ -78,4 +109,19 @@ ul#menu {
     background-color: deeppink;
     background-image: url(images/friends.jpg);
     /*リンクにマウスが乗ったら背景画像を変更する*/
+}
+
+.sample1 {
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid black;
+    background-color: lightgray;
+}
+
+.sample2 {
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid black;
+    background-color: lightgray;
+    line-height: 60px;
 }
