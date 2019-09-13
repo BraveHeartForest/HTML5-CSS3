@@ -47,3 +47,7 @@ ul#menu {
     text-decoration: none;
     /*リンク部分を下線なしにする*/
 }
+
+#menu li a:hover{
+    background-color: deeppink;
+}
