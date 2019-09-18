@@ -142,6 +142,23 @@ ul#menu {
 サブメニュー(左カラム)
 ==================*/
 
+h2 {
+    width: 160px;
+    height: 43px;
+    /*幅と高さ*/
+    padding: 17px 0px 0px 100px;
+    /*パディング*/
+    font-size: 16px;
+    background-image: url("images/bg_h2.png");
+    /*背景画像*/
+    background-repeat: no-repeat;
+    /*背景画像を繰り返さない*/
+    background-color: #000033;
+    /*背景色*/
+    color: #ffffff;
+    /*文字色*/
+}
+
 div#submenu {
     width: 260px;
     /*幅の設定*/
@@ -173,6 +190,16 @@ div#submenu ul li a {
     /*背景画像を繰り返さない*/
     color: #333333;
     /*文字色*/
+}
+
+div#submenu ul li:first-child a {
+    border-top: 1px dotted gray;
+    /*一番上のリンクに上線を表示*/
+}
+
+div#submenu ul li a:hover {
+    text-decoration: underline;
+    /*リンクにマウスが乗ったら下線を表示*/
 }
 
 /*===================
