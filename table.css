@@ -8,6 +8,8 @@ table.profile {
     /*テーブル全体の幅
     上に置かれている<h3>要素と横幅を揃えるための数値です。
     h3は660pxですが、余白と合わせると680pxとなります。*/
+    border-collapse: collapse;
+    /*セル同士の間に間隔を空けない*/
 }
 
 table.profile th {
