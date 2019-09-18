@@ -38,9 +38,17 @@ div#pagebody {
 
 img {
     border: 0;
+    /*画像のボーダーを0にする。*/
 }
 
-/*画像のボーダーを0にする。*/
+p {
+    width: 660px;
+    /*幅の指定*/
+    margin: 10px;
+    /*マージン*/
+    text-indent: 1em;
+    /*インデント幅*/
+}
 
 /*=============================
 ヘッダ
@@ -202,6 +210,21 @@ div#submenu ul li a:hover {
     /*リンクにマウスが乗ったら下線を表示*/
 }
 
+div#submenu>ul>li>a::before {
+    content: url("images/icon_submenu.png");
+    /*アイコン画像を挿入
+    contentプロパティで内容挿入を指定
+    上記のCSSソース中の content: url("images/icon_submenu.png"); の部分が、
+    アイコン画像の挿入を指定しているCSSソースです。
+    挿入しているのは、アイコン風に作成した画像ファイルです。*/
+    margin: 0px 10px 0px 0px;
+    /*マージン*/
+    vertical-align: text-top;
+    /*縦方向の表示位置
+    vertical-alignプロパティは縦方向の表示位置を指定する際に使用します。
+    値には、テキストの上端に表示位置を揃えるtext-topというキーワードを指定しています。*/
+}
+
 /*===================
 インフォメーション(右カラム)
 ==================*/
@@ -211,6 +234,8 @@ div#info {
     /*幅の指定*/
     float: left;
     /*カラムを左寄せにする*/
+    padding: 10px 20px 0px 0px;
+    /*パディング*/
 }
 
 h3 {
