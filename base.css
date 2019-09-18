@@ -38,9 +38,18 @@ div#pagebody {
 
 img {
     border: 0;
+    /*画像のボーダーを0にする。*/
 }
 
-/*画像のボーダーを0にする。*/
+p {
+    width: 660px;
+    /*幅の指定*/
+    margin: 10px;
+    /*マージン*/
+    text-indent: 1em;
+    /*インデント幅
+    1emは一文字分の幅。*/
+}
 
 /*=============================
 ヘッダ
@@ -142,6 +151,23 @@ ul#menu {
 サブメニュー(左カラム)
 ==================*/
 
+h2 {
+    width: 160px;
+    height: 43px;
+    /*幅と高さ*/
+    padding: 17px 0px 0px 100px;
+    /*パディング*/
+    font-size: 16px;
+    background-image: url("images/bg_h2.png");
+    /*背景画像*/
+    background-repeat: no-repeat;
+    /*背景画像を繰り返さない*/
+    background-color: #000033;
+    /*背景色*/
+    color: #ffffff;
+    /*文字色*/
+}
+
 div#submenu {
     width: 260px;
     /*幅の設定*/
@@ -175,6 +201,31 @@ div#submenu ul li a {
     /*文字色*/
 }
 
+div#submenu ul li:first-child a {
+    border-top: 1px dotted gray;
+    /*一番上のリンクに上線を表示*/
+}
+
+div#submenu ul li a:hover {
+    text-decoration: underline;
+    /*リンクにマウスが乗ったら下線を表示*/
+}
+
+div#submenu>ul>li>a::before {
+    content: url("images/icon_submenu.png");
+    /*アイコン画像を挿入
+    contentプロパティで内容挿入を指定
+    上記のCSSソース中の content: url("images/icon_submenu.png"); の部分が、
+    アイコン画像の挿入を指定しているCSSソースです。
+    挿入しているのは、アイコン風に作成した画像ファイルです。*/
+    margin: 0px 10px 0px 0px;
+    /*マージン*/
+    vertical-align: text-top;
+    /*縦方向の表示位置
+    vertical-alignプロパティは縦方向の表示位置を指定する際に使用します。
+    値には、テキストの上端に表示位置を揃えるtext-topというキーワードを指定しています。*/
+}
+
 /*===================
 インフォメーション(右カラム)
 ==================*/
@@ -184,6 +235,26 @@ div#info {
     /*幅の指定*/
     float: left;
     /*カラムを左寄せにする*/
+    padding: 10px 20px 0px 0px;
+    /*パディング*/
+}
+
+h3 {
+    font-size: 14px;
+    /*文字サイズ*/
+    width: 660px;
+    /*横幅*/
+    padding: 10px 0px 10px 20px;
+    /*パディング*/
+    background-color: #003399;
+    /*背景色*/
+    color: #ffffff;
+    /*文字色*/
+    border-radius: 3px;
+    /*角丸にする。値を3pxとしていますが、
+    これは指定する角丸のサイズが半径3ピクセルであることを示しています。
+    この値を大きくすれば角丸も大きくなります。 border-radiusプロパティの初期値は0なので、
+    特に指定しなければ角がゼロ、つまり四角形になります。*/
 }
 
 .infoimg_index {
@@ -199,6 +270,12 @@ div#info {
 hr {
     clear: both;
     /*フロート配置をクリアする*/
+    width: 680px;
+    /*幅の指定*/
+    margin: 10px 0px;
+    /*マージン*/
+    border: 1px dotted #cccccc;
+    /*内容の区切りをグレーの点線表示にする*/
 }
 
 /*=======================
@@ -208,4 +285,8 @@ hr {
 div#footer {
     clear: both;
     /*回り込みを解除する*/
+    height: 40px;
+    padding: 10px 0px 0px 0px;  /*高さの指定*/
+    font-size: x-small; /*フォントサイズを小さくする*/
+    text-align: center; /*センタリング*/
 }
