@@ -5,32 +5,120 @@
     <title>会社概要|ウェブサンプル株式会社</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="table.css">
 </head>
 
 <body>
-    <h1>ウェブサンプル株式会社</h1>
+    <div id="pagebody">
+        <!--ヘッダ-->
+        <div id="header">
+            <h1><a href="index.html"><img src="images/logo.png" alt="ウェブサンプル株式会社"></a></h1>
+        </div>
+        <!--メインメニューでやんす-->
+        <ul id="menu">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="product.html">製品紹介</a></li>
+            <li><a href="profile.html">会社概要</a></li>
+            <li><a href="contact.html">お問合せ</a></li>
+        </ul>
 
-    <!--メインメニューでやんす-->
-    <ul id="menu">
-        <li>ホーム</li>
-        <li>製品紹介</li>
-        <li>会社概要</li>
-        <li>お問い合わせ</li>
-    </ul>
+        <!--ヘッダ画像-->
+        <div id="img_subpage">
+            <img src="./images/img_profile.png" alt="明日を見詰めるウェブサンプル株式会社">
+        </div>
+
+        <!--サブメニュー(左カラム)-->
+        <div id="submenu">
+            <h2>会社概要</h2>
+            <ul>
+                <li><a href="#info001">企業情報</a></li>
+                <li><a href="#info002">沿革</a></li>
+                <li><a href="#info003">アクセス</a></li>
+            </ul>
+        </div>
 
 
-    <h2>新着情報</h2>
-    <p>あああああああああああああああ！！！！！</p>
+        <!--インフォメーション(右カラム)-->
+        <div id="info">
+            <h3 id="info001">企業情報</h3>
+            <table class="profile">
+                <tr>
+                    <th>社名</th>
+                    <td>ウェブサンプル株式会社</td>
+                </tr>
+                <tr>
+                    <th>住所</th>
+                    <td>〒114-5141<br>
+                    アルファコンプレックス<br>
+                    旧幾八点ビル２Ｆ</td>
+                </tr>
+                <tr>
+                    <th>代表者</th>
+                    <td>野苺　先輩</td>
+                </tr>
+                <tr>
+                    <th>資本金</th>
+                    <td>314,159,265,358,979円</td>
+                </tr>
+                <tr>
+                    <th>事業内容</th>
+                    <td>月面開発事業<br>
+                    情報システム事業<br>
+                    海底探索事業<br>
+                    DNA鑑定事業
+                </td>
+                </tr>
+            </table>
+            <hr>
 
-    <h3>新商品のご案内</h3>
-    <p>あああああああああああああああ！！！！！</p>
+            <h3 id="info002">沿革</h3>
+            <table class="profile">
+                <tr>
+                    <th>96年</th>
+                    <td>会社設立</td>
+                </tr>
+                <tr>
+                    <th>114年</th>
+                    <td>月面開発事業を開始</td>
+                </tr>
+                <tr>
+                    <th>514年</th>
+                    <td>海底探索事業を開始</td>
+                </tr>
+                <tr>
+                    <th>810年</th>
+                    <td>DNA鑑定事業を開始</td>
+                </tr>
+                <tr>
+                    <th>1919年</th>
+                    <td>情報システム事業を開始</td>
+                </tr>
+            </table>
+            <hr>
 
-    <h3>展示会への出店</h3>
-    <p>あああああああああああああああ！！！！！</p>
+            <h3 id="info003">アクセス</h3>
+            <p>
+                <img src="images/access.jpg" alt="アクセスのイメージ画像" class="infoimg_subpage">
+            </p>
+            <div class="remarks">
+                <h4>交通機関</h4>
+                地下鉄[削除済み]線<br>
+                ■■駅114514番出口より徒歩810分
+            </div>
+            <div class="remarks">
+                〒114-5141<br>
+                アルファコンプレックス<br>
+                旧幾八点ビル２Ｆ<br>
+                Tel:■■-■■■■-■■■■■
+            </div>
+            <hr>
+        </div>
+        <!--フッタ-->
+        <div id="footer">
+            <small>Copyright &#169;ウェブサンプル株式会社 All Rights Reserved.</small>
+        </div>
+    </div>
 
-    <h4>環境への取り組み</h4>
-    <p>あああああああああああああああ！！！！！</p>
-    <small>Copyright &#169;ウェブサンプル株式会社 All Rights Reserved.</small>
 </body>
 
 </html>
