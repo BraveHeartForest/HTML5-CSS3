@@ -55,3 +55,14 @@
     text-indent: 0;
     /*字下げ幅をゼロにする*/
 }
+
+/*
+これではradioボタンまでサイズが広がってしまいます。
+#form1 input {
+    width: 70%;
+}
+*/
+
+input[type="text"], input[type="email"] {
+    width: 70%;
+}
