@@ -35,8 +35,23 @@
 }
 
 #form1 input:focus, #form1 textarea:focus {
-    box-shadow: 0px 0px 5px 2px greenyellow;
+    box-shadow: 0px 0px 5px 2px chocolate;
     /*影を付ける*/
     outline-style: none;
     /*アウトラインを無しにする*/
+}
+
+#form1 p input {
+    width: 300px;
+    height: 40px;
+    /*幅と高さ*/
+    border: 0;
+    /*ボーダーなし*/
+}
+
+#form1 p {
+    text-align: center;
+    /*センタリング*/
+    text-indent: 0;
+    /*字下げ幅をゼロにする*/
 }
