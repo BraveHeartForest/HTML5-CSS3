@@ -4,9 +4,16 @@
 <head>
     <title>お問合せフォーム|ウェブサンプル株式会社</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="table.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="base_sp.css" media="screen and (max-width:800px)">
+    <link rel="stylesheet" href="table_sp.css" media="screen and (max-width:800px)">
+    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
 </head>
 
 <body>
@@ -71,13 +78,18 @@
 
             <h3 id="info002">メールでのお問合せ</h3>
             <p>
-                xxx@xxxxxxxx.jp
-                までメールをお送りください。
+                <<<<<<< HEAD <a href="mailto: ?subject=ウェブサイトからのお問合せ&body=お問合せ区分をご記入ください(商品・採用・その他) : ">
+                    xxx@xxxxxxxx.jp</a>
+                    =======
+                    xxx@xxxxxxxx.jp
+                    >>>>>>> parent of ab1d23f... メアドをクリックした時に自動的に送信先、件名、内容を記載しメーラーを起動するように変更しました。
+                    までメールをお送りください。
             </p>
             <hr>
 
             <h3 id="info003">お電話でのお問合せ</h3>
-            <img src="images/contact0001.png" alt="電話番号114-514-8101" class="infoimg_tel">
+            <a href="tel:+xxxxxxxxxx"> <img src="images/contact0001.png" alt="電話番号114-514-8101" class="infoimg_tel">
+            </a>
             <div class="remarks">
                 <h4>受付時間</h4>
                 受付時間は、平日午前9時から午後5時までとなります。
